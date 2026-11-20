@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thelma's Little Bites</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Thelma's Little Bites</h1>
+  <p>Little bites. Big flavor.</p>
+  <a href="#menu" class="button">View Our Menu</a>
+</header>
+
+<section id="menu">
+  <h2>Our Menu</h2>
+  <p>Fresh treats made with love!</p>
+
+  <div class="menu-container">
+
+    <div class="menu-item">
+      <h3>Deviled Eggs</h3>
+      <p>$5.00</p>
+      <button onclick="addToOrder('Deviled Eggs')">
+        Add to Order
+      </button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Bagels</h3>
+      <p>$5.00</p>
+      <button onclick="addToOrder('Bagels')">
+        Add to Order
+      </button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Tea</h3>
+      <p>$5.00</p>
+      <button onclick="addToOrder('Tea')">
+        Add to Order
+      </button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Matcha</h3>
+      <p>$5.00</p>
+      <button onclick="addToOrder('Matcha')">
+        Add to Order
+      </button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Cinnamon Rolls</h3>
+      <p>$5.00</p>
+      <button onclick="addToOrder('Cinnamon Rolls')">
+        Add to Order
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<section id="order">
+  <h2>Your Order</h2>
+  <ul id="order-list"></ul>
+  <h3 id="total">Total: $0.00</h3>
+  <button onclick="clearOrder()">Clear Order</button>
+</section>
+
+<footer>
+  <p>© 2026 Thelma's Little Bites</p>
+  <p>Thank you for stopping by!</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
